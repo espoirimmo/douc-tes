@@ -1,6 +1,6 @@
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     overflow: hidden;
     background-color: #333;
@@ -16,23 +16,61 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    justify-content: center;
 }
 
 li a:hover {
     background-color: #111;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: DodgerBlue;
+
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: 50px;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
 }
 
-.flex-container>div {
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
+.container img {
+    vertical-align: middle;
+}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.flex-item {
+    font-size: 16px;
+    color: #333;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
 }
