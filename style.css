@@ -1,76 +1,104 @@
-ul {
-    list-style-type: none;
-    margin: 10px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    background-color: #f0f0f0;
+
+}
+header {
+    background-color: #292b29;
+    padding: 0 1em;
+    margin-top: 0px;
 }
 
-li {
-    float: left;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
 }
 
-li a {
-    display: block;
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px; 
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin: 25px;
+    font-weight: bold;
+    font-size: large;
+    
+    
+}
+
+.nav-menu li a:hover {
+    background-color: #d6df29;
+    border-radius: 5px;
+}
+
+ .entete h1{
+    background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 1px;
+    
     justify-content: center;
 }
 
-li a:hover {
-    background-color: #111;
+
+
+main {
+    padding: 1em;
+    background-color: white;
 }
 
-
-.container {
-    position: relative;
-    max-width: 600px;
-    margin: 50px;
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px;
-}
-
-.container img {
-    vertical-align: middle;
-}
-
-.container .content {
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
     position: absolute;
     bottom: 0;
-    background: rgb(0, 0, 0);
-    /* Fallback color */
-    background: rgba(0, 0, 0, 0.5);
-    /* Black background with 0.5 opacity */
-    color: #f1f1f1;
     width: 100%;
-    padding: 20px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+
+div.gallery {
+    margin: 30px;
+    border: 10px solid #871010;
+    float: left;
+    width: 200px;
+
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 200px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 100px;
-    margin-top: 50px;
+div.gallery:hover {
+    border: 1px solid #035347;
 }
 
-.flex-item {
-    font-size: 16px;
-    color: #333;
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 5px;
     text-align: center;
 }

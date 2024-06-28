@@ -1,61 +1,72 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Le titre de ma page</title>
-
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOUCOURE Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="entete">
 
-    <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
-    <div class="row">
-        <h2>Responsive My first page in Html and CSS Transparent Text</h2>
+    <h1>BIENVENU DOUCOURE SHOPPINQ</h1>
+  </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="images/logo.jpg" alt="My Logo" class="logo">
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>A PROPOS DE L'ENTREPRISE DOUCOURE</h2>
+    <p>This is a paragraph about me.</p>
 
-        <div class="container">
-            <img src="images/dev.jpeg" alt="codeur" style="width:100%;">
-            <div class="content">
-                <h1>DOUCOURE</h1>
-                <p>Lorem ipsum dolor sit amet, an his etiam torquatos.<br> Tollit soleat phaedrum te duo, eum cu
-                    recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.
-                </p>
-            </div>
-        </div>
+  </main>
+  <div class="gallery">
+
+    <img src="images/codeur.jpg" alt="Cinque Terre" width="600" height="400">
+
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+
+    <img src="images/dev.jpeg" alt="Forest" width="600" height="400">
+
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+
+    <img src="images/developpeur-web.jpg" alt="Northern Lights" width="700" height="400">
+
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+
+    <img src="images/codeur.jpg" alt="Mountains" width="700" height="400">
+
+    <div class="desc">Computer dev of the image here</div>
+  </div>
+</main>
 
 
-        <div class="container">
-            <img src="images/developpeur-web.jpg" alt="codeur" style="width:100%;">
-            <div class="content">
-                <h1>DOUCOURE</h1>
-                <p>Lorem ipsum dolor sit amet, an his etiam torquatos.<br> Tollit soleat phaedrum te duo, eum cu
-                    recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.
-                </p>
-            </div>
-        </div>
-    </div>
+  
 
-        <div class="flex-container margin-top:200px">
-            <div class="flex-item">This is some text inside a flexbox.</div>
-        </div>
-
-
-
-
-
-        <p>Try to resize the browser window.</p>
-        <p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
-        <p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
-
-
-
-        <h1>DOUCOURE</h1>
+  
+  <footer>
+    <p>&copy; 2024 My Website DOUCOURE SHOPPINQ</p>
+  </footer>
 </body>
 
 </html>
